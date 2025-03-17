@@ -1,6 +1,6 @@
 <a href="/post/{{ $article['uri'] }}" class='w-full'>
    <div class="card  cursor-pointer bg-base-100 image-full w-full h-full shadow-sm">
-    <figure>
+    <figure class="mg-holder">
       <img
         src="{{ $article['image'] }}"
         alt="{{ $article['source']['title'] }}" />

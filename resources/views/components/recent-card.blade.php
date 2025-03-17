@@ -1,5 +1,5 @@
 <a href="/post/{{ $article['uri'] }}" class="flex flex-col w-full">
-    <figure class=" h-52 w-full bg-gray-400">
+    <figure class=" h-52 w-full img-holder">
         <img   src="{{ $article['image'] }}"
         class=" object-cover h-full w-full"
         onerror="this.onerror=null;this.source='{{ asset('images/logo.png') }}'"

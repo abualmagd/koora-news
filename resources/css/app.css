@@ -21,39 +21,28 @@
     overflow-x: hidden;
 }
 
-.my-slide-in {
-    animation: sliding 150s linear infinite;
-    position: absolute;
-    white-space: nowrap;
-}
-
 .my-slide-out {
-    animation: sliding-out 150s linear infinite;
+    animation: sliding-out 300s ease-in-out infinite;
+    animation-delay: 0s;
     position: absolute;
     white-space: nowrap;
-}
-.wrapper:hover .my-slide-in {
-    animation: none;
-}
-
-@keyframes sliding {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
+    transform: translateX(100%);
 }
 
 @keyframes sliding-out {
     0% {
-        transform: translateX(-100%);
+        transform: translateX(100%);
     }
     100% {
-        transform: translateX(100%);
+        transform: translateX(-100%);
     }
 }
 
+.img-holder {
+    background-image: url("/public/images/hld.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .card {
     &.image-full {
         > figure img {

@@ -34,7 +34,8 @@ class MainController extends Controller
    
         if($responseData['articles']['results']){
             $activity = $responseData['articles']['results'];
-            return view('main',['articles'=>$activity]);
+            $first20Articles = array_slice($activity, 0, 20);
+            return view('main',['articles'=>$first20Articles]);
         }else{
             return view('main',['articles'=>null]);
 
